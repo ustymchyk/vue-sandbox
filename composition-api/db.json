@@ -33,14 +33,17 @@
   ],
   "events": [
     {
+      "id": "id-1",
       "name": "Nothing But Thieves",
       "date": "01-01-2021"
     },
     {
+      "id": "id-2",
       "name": "Thirty Seconds To Mars",
       "date": "01-03-2021"
     },
     {
+      "id": "id-3",
       "name": "Eminem",
       "date": "01-06-2021"
     }

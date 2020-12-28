@@ -1,22 +1,32 @@
 <template>
-  <div class="counter">
-    <p>Value: {{ counter }}</p>
-    <label>
-      Add:
-      <input v-model="increaseValue"/>
-    </label>
-    <button @click="add()">Add</button>
-  </div>
+  <ul class="events">
+    <li class="event" v-for="event in events" :key="event.id">
+      <p class="title">{{ event.name }}</p>
+      <p class="date">{{ event.data }}</p>
+    </li>
+  </ul>
 </template>
 
 <script>
-import counterComposition from './composables/counter';
+import { reactive, toRefs } from 'vue';
 
 export default {
   setup() {
-    const { add, counter, increaseValue } = counterComposition();
-    return { add, counter, increaseValue };
+    const data = reactive({
+      events: [],
+    });
+
+    fetch('http://localhost:3000/events')
+      .then((res) => res.json())
+      .then((res) => { data.events = res; })
+      .catch((err) => console.log(err))
+      .finally(() => {});
+
+    return { ...toRefs(data) };
   },
 };
-
 </script>
+
+<style>
+
+</style>
