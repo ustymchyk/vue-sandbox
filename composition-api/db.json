@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "id-1",
+      "name": "Name 1",
+      "surname": "surname 1",
+      "age": 1
+    },
+    {
+      "id": "id-2",
+      "name": "Name 2",
+      "surname": "Surname 2",
+      "age": 2
+    },
+    {
+      "id": "id-3",
+      "name": "Name 3",
+      "surname": "Surname 3",
+      "age": 3
+    },
+    {
+      "id": "id-4",
+      "name": "Name 4",
+      "surname": "Surname 4",
+      "age": 4
+    },
+    {
+      "id": "id-5",
+      "name": "Name 5",
+      "surname": "Surname 5",
+      "age": 5
+    }
+  ],
+  "events": [
+    {
+      "name": "Nothing But Thieves",
+      "date": "01-01-2021"
+    },
+    {
+      "name": "Thirty Seconds To Mars",
+      "date": "01-03-2021"
+    },
+    {
+      "name": "Eminem",
+      "date": "01-06-2021"
+    }
+  ]
+}
